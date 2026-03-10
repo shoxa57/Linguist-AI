@@ -1,0 +1,42 @@
+<section class="container" style="margin-bottom: 80px;">
+    <div class="weather-interactive-card" style="border-color: #bb86fc;">
+        <div class="weather-card-inner">
+            <div class="weather-header">
+                <h2 class="section-title" style="font-size: 1.8rem; margin: 0;">
+                    Project #5: <span class="highlight" style="color: #bb86fc; text-shadow: 0 0 15px #bb86fc;">Linguist AI</span>
+                </h2>
+                <div class="status-badge">
+                    <span class="pulse-dot" style="background: #bb86fc; box-shadow: 0 0 10px #bb86fc;"></span> Neural Core Active
+                </div>
+            </div>
+            
+            <div class="pj-tags" style="margin: 15px 0;">
+                <span>NLP</span><span>Deep Learning</span><span>API Integration</span>
+            </div>
+
+            <div class="skycast-layout" style="margin-top: 20px; display: flex; gap: 20px; flex-wrap: wrap;">
+                <div class="skycast-control-part" style="flex: 1; min-width: 300px;">
+                    <textarea id="transInput" placeholder="Enter text to translate..." 
+                        style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); color: white; padding: 15px; border-radius: 10px; font-family: 'Orbitron', sans-serif; resize: none; height: 120px; outline: none; transition: 0.3s;"></textarea>
+                    
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <select id="langSelect" style="background: #1c2128; color: white; border: 1px solid var(--border-color); padding: 10px; border-radius: 5px; flex: 1; cursor: pointer;">
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                            <option value="uz">Uzbek</option>
+                            <option value="ja">Japanese</option>
+                            <option value="de">German</option>
+                        </select>
+                        <button onclick="runTranslation()" style="background: #bb86fc; color: black; border: none; padding: 10px 25px; border-radius: 5px; font-weight: bold; cursor: pointer; font-family: 'Orbitron'; transition: 0.3s;">TRANSLATE</button>
+                    </div>
+                </div>
+
+                <div class="skycast-visual-part" style="flex: 1; min-width: 300px; background: rgba(187, 134, 252, 0.05); border-radius: 15px; padding: 20px; border: 1px dashed #bb86fc; display: flex; align-items: center; justify-content: center;">
+                    <div id="transOutput" style="color: var(--text-primary); font-size: 1.1rem; text-align: center; width: 100%;">
+                        Waiting for input...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
